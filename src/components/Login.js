@@ -8,6 +8,8 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import GoogleLogin from "react-google-login";
+import LoginGithub from "react-login-github";
+import TwitterLogin from "react-twitter-login";
 
 function Login() {
   const [formInfo, setformInfo] = useState({
@@ -79,6 +81,10 @@ function Login() {
 
   const responseGoogle = (response) => {
     console.log(response);
+  };
+
+  const authHandler = (err, data) => {
+    console.log(err, data);
   };
 
   return (
@@ -160,8 +166,22 @@ function Login() {
             >
               <FontAwesomeIcon icon={faGoogle} />
             </GoogleLogin>
-            <FontAwesomeIcon icon={faTwitter} />
-            <FontAwesomeIcon icon={faGithub} />
+            <TwitterLogin
+              authCallback={authHandler}
+              consumerKey={process.env.TWITTER_API_KEY}
+              consumerSecret={process.env.TWITTER_API_KEY_SECRET}
+              className="twitter"
+            >
+              {" "}
+              <FontAwesomeIcon icon={faTwitter} />
+            </TwitterLogin>
+
+            <LoginGithub
+              clientId={process.env.REACT_APP_GITHUB_CLIENT_ID}
+              className="github"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </LoginGithub>
           </div>
         </form>
       </div>

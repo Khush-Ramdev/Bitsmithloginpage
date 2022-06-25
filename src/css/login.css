@@ -140,8 +140,8 @@ label {
   box-shadow: none !important;
   padding: 0 !important;
   color: blue !important;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 1.75rem !important;
+  height: 1.75rem !important;
 }
 
 .google > div {
@@ -149,13 +149,34 @@ label {
 }
 
 .google > span {
-  display: inline-block;
+  display: inline-block !important;
   padding: 0 !important;
   height: 100% !important;
   width: 100% !important;
 }
-.google > span .svg {
+
+.google > span > svg {
   height: 100%;
+}
+
+.github {
+  background: none;
+  border: none;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.github:hover {
+  cursor: pointer;
+}
+
+.github svg {
+  color: blue;
+  height: 100%;
+}
+
+.twitter:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {

@@ -3243,6 +3243,11 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+crypto-js@^3.1.9-1:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.3.0.tgz#846dd1cce2f68aacfa156c8578f926a609b7976b"
+  integrity sha512-DIT51nX0dCfKltpRiXV+/TVZq+Qq2NgF4644+K7Ttnla7zEzqc+kjJyiB96BHNyUTBxyjzRcZYpUdZa+QAqi6Q==
+
 crypto-random-string@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
@@ -7285,6 +7290,11 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-login-github@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/react-login-github/-/react-login-github-1.0.8.tgz#2262024270e7ba001b998996781620c98a3fa2dd"
+  integrity sha512-Et30Hx8eV7vmqQpEma0DyYKak2RMGX7le0OC3R49vdeOfoJL4+RaTS4IeqDgWrAmyFWs9oWLamvvXbG67Mmr4A==
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
@@ -7344,6 +7354,13 @@ react-scripts@5.0.1:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-twitter-login@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-twitter-login/-/react-twitter-login-1.5.0.tgz#09903d4b216268f26ca0cfb696fa011fb91281a1"
+  integrity sha512-onS9dwZ+07+4mMi+2xh6w0KPgY6jkWEfVVom5RCzAolGkDKWTvEMIutkAm1s6O7QtFmam+mpKoMBF8Lwam5iKA==
+  dependencies:
+    crypto-js "^3.1.9-1"
 
 react@^18.2.0:
   version "18.2.0"

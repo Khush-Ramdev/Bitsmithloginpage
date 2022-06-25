@@ -1,0 +1,189 @@
+.login-wrapper {
+  box-sizing: border-box;
+  padding: 2%;
+  height: 100%;
+}
+
+.content {
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.left-content,
+.right-content {
+  max-width: 50%;
+  margin: 2rem;
+  height: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading-two {
+  color: rgba(51, 50, 50, 0.795);
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+.blue {
+  color: blue;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: darkgray;
+}
+
+.right-content {
+  background-color: white;
+}
+
+.form {
+  color: rgb(41, 39, 39);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem;
+}
+
+input {
+  min-width: 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 2px solid lightgray;
+  margin: 1rem 0;
+}
+
+input[type="checkbox"] {
+  margin: 1rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 5px;
+}
+
+.name {
+  display: flex;
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.firstname,
+.lastname {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.firstname {
+  margin: 1rem 1rem 1rem 0;
+}
+
+label {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.signup {
+  background-color: blue;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.otheroptions {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.icons {
+  width: 80%;
+  color: blue;
+  display: flex;
+  margin: 1rem auto;
+  justify-content: space-around;
+  font-size: 1.75rem;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+}
+
+.firstnameerror {
+  /* position: r; */
+  width: 100%;
+}
+
+.passwordinstructions {
+  font-size: 0.8rem;
+}
+
+.google {
+  display: block !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  color: blue !important;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.google > div {
+  display: none !important;
+}
+
+.google > span {
+  display: inline-block;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.google > span .svg {
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .login-wrapper {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .heading-two {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .left-content {
+    max-width: 100%;
+    margin: 1rem;
+  }
+  .right-content {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
